@@ -95,16 +95,16 @@ pygame.init()
 
 DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 FPSCLOCK = pygame.time.Clock()
-BACKGROUND=pygame.image.load('backtile.png')
+BACKGROUND=pygame.image.load('images/backtile.png')
 BGH=64
 BGW=64
-CAR=pygame.image.load('car.png')
-BAD=pygame.image.load('bad.png')
+CAR=pygame.image.load('images/car.png')
+BAD=pygame.image.load('images/bad.png')
 CAR_W=25
 CAR_H=50
 fontObj = pygame.font.Font('freesansbold.ttf', 16)
-CRASH=pygame.mixer.Sound('crash.ogg')
-pygame.mixer.music.load('music.ogg')
+CRASH=pygame.mixer.Sound('sounds/crash.ogg')
+pygame.mixer.music.load('sounds/music.ogg')
 
 TRACKWIDTH=3
 
@@ -248,6 +248,10 @@ sys.exit()
 
 """
 	Changelog
+
+	2012-08-09
+	Removed a couple of unused files
+	Moved sounds and images to their own directory
 
 	2012-08-09
 	version 0.0.4
